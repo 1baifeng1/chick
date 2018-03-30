@@ -1,0 +1,53 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg"
+	tools:context="com.huzi.orderpanel.activity.PayZhifubaoActivity" >
+
+	<AbsoluteLayout 
+		android:layout_x="72px"
+		android:layout_y="37px"
+		android:layout_width="942px"
+		android:layout_height="1190px"
+		android:background="@drawable/paychoose_bg_null">
+		<TextView 
+			android:id="@+id/pay_zhifudingdan"
+			android:layout_x="350px"
+			android:layout_y="180px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="支付订单"
+			android:textSize="60px"
+			android:textColor="#563204" />
+		
+		<ImageView 
+			android:id="@+id/pay_qrcode"
+			android:layout_x="296px"
+			android:layout_y="521px"
+			android:layout_width="366px"
+			android:layout_height="366px"
+			android:src="@drawable/pay_qrcode_weixin" />
+		
+		<TextView 
+			android:id="@+id/pay_pleasepay"
+			android:layout_x="281px"
+			android:layout_y="933px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="请用手机扫描支付"
+			android:textSize="50px"
+			android:textColor="#563204"/>
+		
+		<TextView 
+			android:id="@+id/pay_countdown"
+			android:layout_x="845px"
+			android:layout_y="1063px"
+			android:layout_width="wrap_content"
+			android:layout_height="60px"
+			android:text="5"
+			android:textColor="#563204"
+			android:textSize="50px"/>
+	</AbsoluteLayout>
+
+</AbsoluteLayout>

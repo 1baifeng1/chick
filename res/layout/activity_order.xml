@@ -1,0 +1,250 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg"
+	tools:context="com.huzi.orderpanel.activity.OrderActivity" >
+	
+
+	<!-- 菜品铭牌、菜品图片、价签 -->
+	<LinearLayout 
+		android:id="@+id/order_menu_show"
+		android:layout_x="321px"
+		android:layout_y="100px"
+		android:layout_width="738px"
+		android:layout_height="1110px"
+		android:orientation="vertical"
+		android:gravity="center_horizontal" >
+		
+		<!-- 菜品铭牌 -->
+		<TextView
+			android:id="@+id/order_menu_name"
+			android:layout_width="430px"
+			android:layout_height="150px"
+			android:text="黄焖鸡"
+			android:textColor="#4d2f00"
+			android:textSize="48px"
+			android:gravity="center_horizontal"
+			android:paddingTop="40px"
+			android:background="@drawable/order_menu_name" />
+		
+		<!-- 菜品图片 -->
+		<RelativeLayout 
+			android:id="@+id/order_menu_food"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="26px"
+			>
+			
+			<!-- 开胃小菜 -->
+			<ImageView 
+				android:id="@+id/order_relish"
+				android:layout_width="200px"
+				android:layout_height="200px"
+				/>
+			
+			<!-- 菜品 -->
+			<ImageView 
+				android:id="@+id/order_dishAndDrink"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				/>
+			
+			<!-- 汤 -->
+			 <ImageView 
+			 	android:id="@+id/order_soup"
+			 	android:layout_width="200px"
+			 	android:layout_height="200px"
+			 	android:layout_alignParentBottom="true"
+			 	/>
+			 
+			<!-- 价签 -->
+			<!-- 
+			<ImageView 
+				android:layout_width="274px"
+				android:layout_height="118px"
+				android:src="@drawable/order_pricetag"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentBottom="true"/>
+			 -->
+			 <LinearLayout 
+			 	android:layout_width="274px"
+				android:layout_height="118px"
+				android:background="@drawable/order_pricetag"
+				android:orientation="horizontal"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentBottom="true">
+			 	<TextView 
+			 		android:id="@+id/order_price_shi"
+			 		android:layout_width="wrap_content"
+			 		android:layout_height="wrap_content"
+			 		android:layout_marginLeft="97px"
+			 		android:layout_marginTop="27px"
+			 		android:textColor="#ffd339"
+			 		android:text="2"/>
+			 	<TextView 
+			 		android:id="@+id/order_price_ge"
+			 		android:layout_width="wrap_content"
+			 		android:layout_height="wrap_content"
+			 		android:layout_marginLeft="29px"
+			 		android:layout_marginTop="27px"
+			 		android:textColor="#ffd339"
+			 		android:text="2"/>
+			 	<TextView 
+			 		android:id="@+id/order_price_jiao"
+			 		android:layout_width="wrap_content"
+			 		android:layout_height="wrap_content"
+			 		android:layout_marginLeft="25px"
+			 		android:layout_marginTop="25px"
+			 		android:textColor="#ffd339"
+			 		android:textSize="25px"
+			 		android:textStyle="italic"
+			 		android:text="00"/>
+			 </LinearLayout>
+		</RelativeLayout>
+	</LinearLayout>
+	
+	<!-- 主食：米饭 -->
+	<ImageView 
+		android:id="@+id/order_staple"
+		android:layout_x="289px"
+		android:layout_y="1277px"
+		android:layout_width="496px"
+		android:layout_height="516px"
+		/>
+	
+	<!-- 购买-盘子 -->
+	<ImageView 
+		android:id="@+id/order_buy"
+		android:layout_x="778px"
+		android:layout_y="1281px"
+		android:layout_width="214px"
+		android:layout_height="220px"
+		android:src="@drawable/order_buy"/>
+	
+	<!-- 购物清单 -->
+	<TextView 
+		android:id="@+id/order_shoppinglist"
+		android:layout_x="775px"
+		android:layout_y="1586px"
+		android:layout_width="240px"
+		android:layout_height="298px"
+		android:background="@drawable/order_shoppinglist_null"
+		android:textColor="#333333"
+		android:textSize="15sp"
+		android:gravity="bottom|right"
+		android:paddingRight="40px"
+		android:paddingBottom="20px" />
+	
+	<!-- 购物说明 -->
+	<TextView 
+		android:id="@+id/order_shoplistdetails"
+		android:layout_x="403px"
+		android:layout_y="1230px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#ffffff"
+		android:textSize="40px"  />
+	
+	<!-- 二级菜单-menu_B:B要放在A的前面那么B下落时就不会挡住A -->
+	<LinearLayout 
+		android:id="@+id/ll_order_menu_b"
+		android:layout_x="32px"
+		android:layout_y="740px"
+		android:orientation="vertical"
+		android:layout_width="200px"
+		android:layout_height="1000px"
+		android:paddingTop="80px"
+		android:gravity="center_horizontal"
+		android:visibility="gone"
+		android:background="@drawable/order_menu_b">
+		
+		<TextView 
+			android:id="@+id/order_menu_b1"
+			android:layout_height="130px"
+			style="@style/order_menu_b_TextView"  />
+		<!-- 
+		<ImageView 
+			android:layout_width="150px"
+			android:layout_height="3px"
+			android:src="@drawable/hengtiao"/>
+		 -->
+		<com.huzi.orderpanel.customview.Order_menuB 
+			android:id="@+id/order_menu_b2"
+			android:layout_height="133px"
+			style="@style/order_menu_b_TextView" />
+		
+		<com.huzi.orderpanel.customview.Order_menuB 
+			android:id="@+id/order_menu_b3"
+			android:layout_height="133px"
+			style="@style/order_menu_b_TextView" />
+		
+		<com.huzi.orderpanel.customview.Order_menuB 
+			android:id="@+id/order_menu_b4"
+			android:layout_height="133px"
+			style="@style/order_menu_b_TextView" />
+		
+		<com.huzi.orderpanel.customview.Order_menuB 
+			android:id="@+id/order_menu_b5"
+			android:layout_height="133px"
+			style="@style/order_menu_b_TextView" />
+		
+		<com.huzi.orderpanel.customview.Order_menuB 
+			android:id="@+id/order_menu_b6"
+			android:layout_height="133px"
+			style="@style/order_menu_b_TextView" />
+		
+	</LinearLayout>
+	
+	<!-- 一级菜单-menu_A -->
+	<LinearLayout
+		android:id="@+id/ll_order_menu_a"
+		android:layout_width="200px"
+		android:layout_height="770px"
+		android:layout_x="31px"
+		android:layout_y="27px"
+		android:background="@drawable/order_menu_a"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:paddingTop="70px" >
+
+		<TextView
+			android:id="@+id/order_menu_a1"
+			style="@style/order_menu_a_TextView"
+			android:text="菜品" />
+
+		<ImageView
+			style="@style/order_menu_a_ImageView" />
+		
+		<TextView
+			android:id="@+id/order_menu_a2"
+			style="@style/order_menu_a_TextView"
+			android:text="主食"  />
+
+		<ImageView
+			style="@style/order_menu_a_ImageView" />
+		
+		<TextView
+			android:id="@+id/order_menu_a3"
+			style="@style/order_menu_a_TextView"
+			android:text="饮料" />
+
+		<ImageView
+			style="@style/order_menu_a_ImageView" />
+		
+		<TextView
+			android:id="@+id/order_menu_a4"
+			style="@style/order_menu_a_TextView"
+			android:text="小菜" />
+
+		<ImageView
+			style="@style/order_menu_a_ImageView" />
+		
+		<TextView
+			android:id="@+id/order_menu_a5"
+			style="@style/order_menu_a_TextView"
+			android:text="汤" />
+
+	</LinearLayout>
+	
+</AbsoluteLayout>

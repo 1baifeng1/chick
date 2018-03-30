@@ -1,0 +1,48 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg"
+	tools:context="com.huzi.orderpanel.activity.PayFinishActivity" >
+
+	<LinearLayout 
+		android:layout_x="71px"
+		android:layout_y="35px"
+		android:layout_width="944px"
+		android:layout_height="1174px"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		android:paddingTop="500px"
+		android:background="@drawable/payfinish_bg">
+		<TextView 
+			android:id="@+id/payfinish_thankyou"
+			android:layout_height="130px"
+			style="@style/payfinish_TextView"
+			android:text="感谢购买"/>
+		<TextView 
+			android:id="@+id/payfinish_pleaseget"
+			android:layout_height="130px"
+			style="@style/payfinish_TextView"
+			android:text="请在下方领取小票"/>
+		<TextView 
+			android:id="@+id/payfinish_enjoy"
+			android:layout_height="130px"
+			style="@style/payfinish_TextView"
+			android:text="即刻享用美食"/>
+		
+		<ImageView 
+			android:id="@+id/payfinish_arrow"
+			android:layout_width="104px"
+			android:layout_height="122px"
+			android:src="@drawable/payfinish_arrow"/>
+	</LinearLayout>
+	
+	<TextView 
+		android:id="@+id/payfinish_countdowm"
+		android:layout_x="922px"
+		android:layout_y="1103px"
+		style="@style/payfinish_TextView"
+		android:layout_height="wrap_content"
+		android:text="5"/>
+
+</AbsoluteLayout>

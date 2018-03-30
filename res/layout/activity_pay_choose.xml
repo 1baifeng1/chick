@@ -1,0 +1,39 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg"
+	tools:context="com.huzi.orderpanel.activity.PayChooseActivity" >
+
+	<!-- 
+	<TextView
+		android:id="@+id/getpay"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/hello_world" />
+	 -->
+
+	<AbsoluteLayout 
+		android:layout_x="72px"
+		android:layout_y="37px"
+		android:layout_width="942px"
+		android:layout_height="1190px"
+		android:background="@drawable/paychoose_bg">
+		<ImageView 
+			android:id="@+id/paychoose_zhifubao"
+			android:layout_x="116px"
+			android:layout_y="840px"
+			android:layout_width="290px"
+			android:layout_height="90px"
+			android:src="@drawable/selector_zhifubao"/>
+		<ImageView 
+			android:id="@+id/paychoose_weixin"
+			android:layout_x="514px"
+			android:layout_y="840px"
+			android:layout_width="290px"
+			android:layout_height="90px"
+			android:src="@drawable/selector_weixin"/>
+		
+	</AbsoluteLayout>
+	
+</AbsoluteLayout>

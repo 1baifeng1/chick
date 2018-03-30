@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.huzi.orderpanel.activity"
+	android:versionCode="1"
+	android:versionName="1.0" >
+	
+	<uses-permission android:name="android.permission.INTERNET"/>
+
+	<uses-sdk
+		android:minSdkVersion="16"
+		android:targetSdkVersion="19" />
+
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/chick_icon"
+		android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+		<activity
+			android:name=".MainActivity"
+			android:label="@string/app_name" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".OrderActivity"
+			android:label="@string/title_activity_order" >
+		</activity>
+		<activity
+			android:name=".AccountActivity"
+			android:label="@string/title_activity_account" >
+		</activity>
+		<activity
+			android:name=".PayChooseActivity"
+			android:label="@string/title_activity_pay_choose" >
+		</activity>
+		<activity
+			android:name=".PayWeixinActivity"
+			android:label="@string/title_activity_pay_weixin" >
+		</activity>
+		<activity
+			android:name=".PayZhifubaoActivity"
+			android:label="@string/title_activity_pay_zhifubao" >
+		</activity>
+		<activity
+			android:name=".PayFinishActivity"
+			android:label="@string/title_activity_pay_finish" >
+		</activity>
+	</application>
+
+</manifest>

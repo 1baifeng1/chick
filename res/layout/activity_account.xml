@@ -1,0 +1,83 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg"
+	tools:context="com.huzi.orderpanel.activity.AccountActivity" >
+
+	<LinearLayout 
+		android:layout_x="71px"
+		android:layout_y="36px"
+		android:layout_width="944px"
+		android:layout_height="1452px"
+		android:orientation="vertical"
+		android:paddingLeft="60px"
+		android:paddingRight="70px"
+		android:background="@drawable/account_bg_account">
+
+		<ListView
+			android:id="@+id/account"
+			android:layout_width="match_parent"
+			android:layout_height="800px"
+			android:cacheColorHint="@android:color/transparent"
+			android:layout_marginTop="306px" >
+		</ListView>
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="130px"
+			android:orientation="horizontal"
+			android:gravity="right|center_vertical"
+			android:paddingRight="80px">
+			<TextView 
+				android:id="@+id/account_yiyouhui"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#4d2f00"
+				android:textSize="60px"
+				android:text="已优惠."/>
+			<TextView 
+				android:id="@+id/account_favour"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#9c2600"
+				android:textSize="50px"
+				android:text="￥0"/>
+		</LinearLayout>
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="130px"
+			android:orientation="horizontal"
+			android:gravity="right|center_vertical"
+			android:paddingRight="80px">
+			<TextView 
+				android:id="@+id/account_gongji"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#4d2f00"
+				android:textSize="60px"
+				android:text="共计."/>
+			<TextView 
+				android:id="@+id/account_total"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#9c2600"
+				android:textSize="50px" />
+		</LinearLayout>
+		
+	</LinearLayout>
+	<ImageView 
+		android:id="@+id/acount_confirm"
+		android:layout_x="765px"
+		android:layout_y="1537px"
+		android:layout_width="246px"
+		android:layout_height="296px"
+		android:src="@drawable/account_confirm"/>		
+	<ImageView 
+		android:id="@+id/acount_return"
+		android:layout_x="71px"
+		android:layout_y="1537px"
+		android:layout_width="246px"
+		android:layout_height="296px"
+		android:src="@drawable/account_return"/>		
+
+</AbsoluteLayout>
